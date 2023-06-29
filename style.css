@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e3f2fd;
+}
+
+.container{
+    width: 850px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px gray;
+    padding: 35px 35px 35px;
+}
+
+.container .wrap{
+    display: flex;
+    margin: 20px 0;
+    min-height: 335px;
+}
+
+.container .editingpan{
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    width: 288px;
+    border-radius: 5px;
+}
+
+.editingpan .title{
+    display:block;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.wrap .imgview{
+    margin-left: 20px;
+}
+
+.imgview img{
+    max-width: 490px;
+    max-height: 335px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+.controls button{
+    font-size: 14px;
+    padding: 11px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterops button{
+    padding: 11px 20px;
+}
+
+.active-btn{
+    background-color: rgb(67, 61, 254);
+    color: white;
+    transition: ease-in 5ms;
+}
+
+.filterops{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

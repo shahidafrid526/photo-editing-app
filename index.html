@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Photo Editing App</h1>
+        <p>Developed By: @ShahidAfrid526</p>
+       <div class="wrap">
+
+        <div class="editingpan">
+
+            <div class="filterops">
+                <label class="title">Filters</label>
+                <div class="options">
+                    <button class="active-btn" id="brightness">Brightness</button>
+                    <button id="saturation">Saturation</button>
+                    <button id="inversion">Inversion</button>
+                    <button id="grayscale">Grayscale</button>
+                </div>
+    
+                <div class="slider">
+                    <div class="filter-info">
+                        <p class="name">Brightness</p>
+                        <p class="value">100%</p>
+                    </div>
+                    <input type="range" value="100" min="0" max="200">
+                </div>
+            </div>
+
+            <div class="crop">
+                <label class="crop">Crops</label>
+                <div class="options">
+                    <button data-ratio="1:1" class="insta active-btn">Instagram</button>
+                    <button data-ratio="4:3">4:3</button>
+                    <button data-ratio="16:9">16:9</button>
+                    <button data-ratio="3:2">3:2</button>
+                  </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="imgview">
+            <img src="https://images.unsplash.com/photo-1687053348022-aec6139ed5f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=852&q=80" alt="preview-img">
+        </div>
+
+       </div> 
+       <div class="controls">
+        <button class="reset-filter">Reset Filter</button>
+
+        <div class="row">
+            <input type="file" class="file-imput" accept="Image/*" hidden>
+            <button class="choose-img">Choose Image</button>
+            <button class="save-img">Save Image</button>
+        </div>
+    </div>
+        
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
